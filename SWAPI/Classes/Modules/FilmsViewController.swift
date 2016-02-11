@@ -21,7 +21,7 @@ class FilmsViewController: UIViewController {
         filmDetails.text! += "Director: \(film.director!)\n"
         filmDetails.text! += "Producer: \(film.producer!)\n"
         filmDetails.text! += "Release Date: \(film.release_date!)\n"
-        filmDetails.text! += "Characters: \(film.characters)\n"
+        filmDetails.text! += "Characters: \(film.characters!)\n"
         filmDetails.text! += "Planets: \(film.planets!)\n"
         filmDetails.text! += "Starships: \(film.starships!)\n"
         filmDetails.text! += "Vehicles: \(film.vehicles!)\n"
