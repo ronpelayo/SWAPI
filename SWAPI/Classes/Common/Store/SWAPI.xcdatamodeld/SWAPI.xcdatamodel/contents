@@ -1,4 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Film" representedClassName=".Film" syncable="YES">
+        <attribute name="characters" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="director" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="episode_id" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="opening_crawl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="planets" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="producer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="release_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="species" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starships" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicles" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName=".Person" syncable="YES">
+        <attribute name="birth_year" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eye_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="films" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hair_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="home_world" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mass" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skin_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="species" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starships" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicles" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Planet" representedClassName=".Planet" syncable="YES">
+        <attribute name="climate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diameter" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="films" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gravity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orbital_period" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="population" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="residents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rotation_period" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="surface_water" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="terrain" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Species" representedClassName=".Species" syncable="YES">
+        <attribute name="average_height" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="average_lifespan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classification" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="designation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eye_colors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="films" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hair_colors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="homeworld" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="people" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skin_colors" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Starship" representedClassName=".Starship" syncable="YES">
+        <attribute name="cargo_capacity" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="consumables" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost_in_credit" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="crew" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="films" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hyperdrive_rating" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="max_atmosphering_speed" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mglt" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passengers" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pilots" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starship_class" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Vehicle" representedClassName=".Vehicle" syncable="YES">
+        <attribute name="cargo_capacity" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="consumables" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cost_in_credits" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="crew" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="films" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="max_atmosphering_speed" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passengers" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pilots" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vehicle_class" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Film" positionX="-36" positionY="135" width="128" height="210"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="Planet" positionX="-54" positionY="90" width="128" height="210"/>
+        <element name="Species" positionX="-18" positionY="162" width="128" height="225"/>
+        <element name="Starship" positionX="18" positionY="180" width="128" height="270"/>
+        <element name="Vehicle" positionX="0" positionY="171" width="128" height="240"/>
+    </elements>
 </model>
